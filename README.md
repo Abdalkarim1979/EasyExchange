@@ -83,6 +83,17 @@ To deploy the `TokenSwapMaster` contract on the Ethereum network, you can follow
 
 6. **Verify the Contract**:
    - You can verify the contract on a blockchain explorer like Etherscan. Copy the deployed contract address and search for it on Etherscan to verify the source code and interact with the contract.
+### web app:
+The web app interface of the TokenSwapMaster application is a html,css and javascript code use web3.js
+
+1. **Connect Wallet**: The "Connect Wallet" button allows the user to connect their cryptocurrency wallet.
+2. **Display Current Rate**: Shows the current rate for swapping tokens for Ethereum (ETH) and allows the user to refresh the rate by clicking the "Refresh Rate" button.
+3. **Set New Rate**: Users can enter a new rate and set it using the "Set Rate" button.
+4. **Swap ETH for Tokens**: Users can enter the amount of ETH they want to swap and receive the corresponding tokens by clicking the "Swap" button.
+5. **Swap Tokens for ETH**: Users can enter the amount of tokens they want to swap and receive the corresponding ETH by clicking the "Swap" button.
+6. **Owner Functions**: Includes additional functions like withdrawing and depositing ETH and tokens, intended for the owner or administrator of the smart contract.
+### Note:
+This whole project is currently running on the Helosky network if you want to try it you can modify the code according to your own requirements and re-publish the smart contract remember to change the token to your own token.
 
 
 
