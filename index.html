@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Swap Master</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        input[type="number"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        div {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Token Swap Master</h1>
+    <button onclick="connectWallet()">Connect Wallet</button>
+    <p id="wallet-address"></p>
+
+    <div>
+        <h2>Current Rate: <span id="rate">Loading...</span></h2>
+        <button onclick="getRate()">Refresh Rate</button>
+    </div>
+
+    <div>
+        <h2>Set New Rate</h2>
+        <input type="number" id="newRate" placeholder="New Rate">
+        <button onclick="setRate()">Set Rate</button>
+    </div>
+
+    <div>
+        <h2>Swap ETH for Tokens</h2>
+        <input type="number" id="ethAmount" placeholder="ETH Amount">
+        <button onclick="swapETHForTokens()">Swap</button>
+    </div>
+
+    <div>
+        <h2>Swap Tokens for ETH</h2>
+        <input type="number" id="tokenAmount" placeholder="Token Amount">
+        <button onclick="swapTokensForETH()">Swap</button>
+    </div>
+
+    <div>
+        <h2>Owner Functions</h2>
+        <input type="number" id="withdrawETHAmount" placeholder="ETH Amount to Withdraw">
+        <button onclick="withdrawETH()">Withdraw ETH</button>
+        <input type="number" id="withdrawTokenAmount" placeholder="Token Amount to Withdraw">
+        <button onclick="withdrawTokens()">Withdraw Tokens</button>
+        <input type="number" id="depositTokenAmount" placeholder="Token Amount to Deposit">
+        <button onclick="depositTokens()">Deposit Tokens</button>
+        <input type="number" id="depositETHAmount" placeholder="ETH Amount to Deposit">
+        <button onclick="depositETH()">Deposit ETH</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
