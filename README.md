@@ -84,5 +84,5 @@ To deploy the `TokenSwapMaster` contract on the Ethereum network, you can follow
 6. **Verify the Contract**:
    - You can verify the contract on a blockchain explorer like Etherscan. Copy the deployed contract address and search for it on Etherscan to verify the source code and interact with the contract.
 
-For more detailed information on each step, you can refer to the [Ethereum Smart Contract Deployment Guide](https://ethereum.org/en/developers/docs/smart-contracts/deploying/).
+
 
