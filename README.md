@@ -1,3 +1,29 @@
+
+
+## 📖 Project Description  
+**Token Swap Master** is a web application that allows users to seamlessly swap between **Ethereum (ETH)** and tokens through a simple and intuitive interface. It integrates with a Solidity smart contract using **web3.js**, providing secure and transparent token exchange functionality. The app includes wallet connection, real‑time rate display, swap execution, and owner‑specific controls for managing deposits, withdrawals, and exchange rates.  
+
+---
+
+## ✨ Features
+- 🔗 **Connect Wallet**: Easily connect a crypto wallet (e.g., MetaMask).  
+- 📊 **Display Current Rate**: Shows the current token ↔ ETH exchange rate with refresh option.  
+- ⚙️ **Set New Rate**: Owner can update the exchange rate directly.  
+- 💸 **Swap ETH for Tokens**: Enter ETH amount and receive tokens instantly.  
+- 🔄 **Swap Tokens for ETH**: Enter token amount and receive ETH.  
+- 👑 **Owner Functions**: Withdraw/deposit ETH and tokens, manage liquidity, and adjust rates.  
+- 🎨 **Modern UI**: Clean HTML/CSS design with interactive buttons.  
+
+---
+
+## 🛠️ Technologies Used
+- **HTML5 / CSS3** for the front‑end interface  
+- **JavaScript (web3.js)** for blockchain interaction  
+- **Solidity Smart Contract** for token and ETH swap logic  
+
+---
+
+
 ### Explanation of the Contract
 
 This smart contract is called `TokenSwapMaster`, and it is designed to facilitate the exchange of digital tokens for Ethereum (ETH) and vice versa. Here are the main functions:
